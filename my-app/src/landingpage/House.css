@@ -1,0 +1,11 @@
+.HoImg{
+    width: 100%;
+    object-fit: cover;
+}
+.Hohead{
+    font-weight: 100;
+    font-size: 65px;
+}
+.hobButton{
+    background-color: black;
+}

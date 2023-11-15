@@ -1,0 +1,11 @@
+.ahead{
+    font-weight: 100;
+    font-size: 75px;
+}
+.AhButton{
+    background-color: red;
+}
+.afImg{
+    width: 100%;
+    object-fit: cover;
+}

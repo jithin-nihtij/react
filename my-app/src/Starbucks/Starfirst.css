@@ -1,0 +1,42 @@
+.firstparent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    margin-top: 50px;
+}
+
+.row1col1{
+    background-color: #ef3340;;
+  
+}
+.row1col2{
+    background-color: #ef3340;
+    
+}
+
+.firstImg{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+.col2content{
+    text-align: center;
+    height: 325px;
+    margin-top: 90px;
+    width: 80%;
+}
+.jff{
+    border-radius: 20px;
+    border:1px solid white;
+    background:transparent;
+    color: white;
+}
+
+@media screen and (max-width: 720px){
+    .firstparent{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 400px;
+    margin-top: 50px;
+    }
+}

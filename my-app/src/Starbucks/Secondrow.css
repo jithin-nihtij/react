@@ -1,0 +1,36 @@
+.starparent2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    margin-top: 50px;
+}
+
+.row2col1{
+    background-color: #006241;
+}
+.row2col2{
+    background-color: #006241;
+}
+
+.secondimg{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+
+}
+
+.secondrowcontent{
+    text-align: center;
+    height: 325px;
+    margin-top: 90px;
+    width: 80%;
+}
+
+@media screen and (max-width: 720px){
+    .starparent2{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 400px;
+    margin-top: 50px;
+    }
+}

@@ -1,0 +1,31 @@
+.menu{
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+.menu:hover{
+    color: rgb(41, 84, 41);
+}
+.si{
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: 600;
+    width: 100px;
+}
+.jn{
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    width: 100px;
+}
+.fas{
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+}
+

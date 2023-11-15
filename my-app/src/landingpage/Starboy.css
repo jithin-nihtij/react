@@ -1,0 +1,17 @@
+.Sthead{
+    font-weight: 100;
+    font-size: 75px;
+}
+
+.StButton{
+    background-color: blue;
+}
+.StImg{
+   
+    width: 100%;
+    object-fit: cover;
+    animation-name:after;
+    animation-duration: 6s;
+
+}
+
