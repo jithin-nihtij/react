@@ -3,6 +3,7 @@ import { Navbar } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import './Nvbar.css';
+import { Link } from 'react-router-dom';
 
 function Nvbar() {
   return (
@@ -22,9 +23,9 @@ function Nvbar() {
 
           <Nav className="me-auto">
             <Nav.Link href="#home" className='items ms-3'>Home</Nav.Link>
-            <Nav.Link href="#features" className='items ms-3'>Albums</Nav.Link>
-            <Nav.Link href="#pricing" className='items ms-3'>Stream</Nav.Link>
-            <Nav.Link href="#pricing" className='items ms-3'>Merchandise</Nav.Link>
+           <Link to="/Albums"> <Nav.Link href="/Albums" className='items ms-3'>Albums</Nav.Link> </Link>
+            <Nav.Link href="#stream" className='items ms-3'>Stream</Nav.Link>
+            <Nav.Link href="#merchandise" className='items ms-3'>Merchandise</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

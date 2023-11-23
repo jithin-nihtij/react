@@ -1,0 +1,16 @@
+.microFirstStyle{
+    display: grid;
+    background-image: url('Desktop-Hero-Oct.avif');
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px;
+    background-size: cover;
+    align-items: center;
+}
+@media screen and (max-width: 720px){
+    .microFirstStyle{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+
+    }
+}

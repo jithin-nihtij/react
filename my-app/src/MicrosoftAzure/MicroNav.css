@@ -1,0 +1,8 @@
+.MicroNavStyle{
+    display: flex;
+    justify-content: space-between;
+}
+.microItems{
+    font-size: small;
+}
+

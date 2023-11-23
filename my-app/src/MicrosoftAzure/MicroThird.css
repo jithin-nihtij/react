@@ -1,0 +1,26 @@
+.thirdRowBg{
+    background-image: url('thirdRowImage.avif');
+    width: 100%;
+    background-size: cover;
+}
+
+.scrollAndImg{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+}
+
+.drpdwns{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width: 1000px){
+    .scrollAndImg{
+        display: grid;
+        grid-template-columns: 50% ;
+        grid-template-rows: 600px;
+         align-items: center;
+   
+        
+    }
+}
