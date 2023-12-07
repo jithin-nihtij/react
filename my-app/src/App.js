@@ -29,11 +29,60 @@ import ApiCalling4 from './ApiCalling4';
 import ApiAssignment1 from './ApiAssignment1';
 import ApiAssignment2 from './ApiAssignment2';
 import ApiAssignment3 from './ApiAssignment3';
-import Router1 from './Router/Router1';
+// import Router1 from './Router/Router1';
 
-function App() {
+import { createContext, useState } from 'react';
+
+import Table from './UseContext/Table';
+import WizRoute from './CoffeeWizardz/WizRoute';
+import KfcRoute from './KFC/KfcRoute';
+import LoginForm from './FormControl/LoginForm';
+import CrudTable from './Cred/CrudTable';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Data from './Cred/Data';
+import ViewPage from './Cred/ViewPage';
+import Create from './Cred/Create';
+import EditUser from './Cred/EditUser';
+
+
+
+
+
+
+  // const newContext = createContext();
+
+  const crudContext = createContext();
+
+  function App() {
+
+    // const [data, setData] = useState(Data)
+
+    const [data, setData] = useState(Data)
+
   return (
+
+    
+
+  
+
     <div className="App">
+
+      {/* <newContext.Provider value={[data,setData]}>
+        <Table/>
+      </newContext.Provider> */}
+      <crudContext.Provider value={[data,setData]}>
+
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<><CrudTable/></>}/>
+            <Route path='/view/:user' element={<ViewPage/>}/>
+            <Route path='/edit/:user' element={<EditUser/>}/>
+            <Route path='/create' element={<Create/>}></Route>
+          </Routes>
+        </BrowserRouter>
+        
+      </crudContext.Provider>
+
      {/* <Mappingcarousel/>
       
      <Mappingtable/> */}
@@ -63,9 +112,16 @@ function App() {
       {/* <ApiAssignment1/>  */}
       {/* <ApiAssignment2/>     */}
       {/* <ApiAssignment3/> */}
-      <Router1/>
+      {/* <Router1/> */}
+      {/* <WizRoute/> */}
+      {/* <KfcRoute/> */}
+      {/* <LoginForm/> */}
+   
     </div>
   );
 }
 
 export default App;
+// export {newContext};
+
+export {crudContext};

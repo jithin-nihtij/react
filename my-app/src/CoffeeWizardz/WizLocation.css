@@ -1,0 +1,24 @@
+.locationStyle{
+    width:60%;
+    justify-content: center;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 50% 50%;
+}
+.locationImg{
+    width: 100%;
+    object-fit: cover;
+    height:400px;
+}
+
+.locationText{
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px){
+    .locationStyle{
+    grid-template-columns: 75%;
+    width:100%;
+   
+    }
+}

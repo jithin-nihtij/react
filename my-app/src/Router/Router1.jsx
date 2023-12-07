@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Secondrow from '../Starbucks/Secondrow'
 import Starboy from '../landingpage/Starboy'
 import Nvbar from '../landingpage/Nvbar'

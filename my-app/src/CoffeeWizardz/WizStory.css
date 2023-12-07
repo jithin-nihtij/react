@@ -1,0 +1,68 @@
+*{
+    margin:0;
+}
+.storyStyle{
+    background-color: #270c13;
+    padding-top: 100px;
+}
+.aboutUs{
+   
+   
+    font-weight: 300;
+    font-style: normal;
+    font-size: 42px;
+    letter-spacing: 1px;
+   
+    color: rgba(211,204,187,.7);
+   
+    text-align: center;
+    
+}
+
+.storyImg{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    padding-top: 50px;
+   
+}
+.storyPara{
+    width:50%;
+    padding-top: 20px;
+}
+
+.adventure{
+   
+    
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #977835;
+   
+}
+
+.stry{
+   
+    
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 1.6em;
+    color: rgba(211,204,187,.7);
+    -webkit-font-smoothing: antialiased;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.storyFooter{
+    padding-top: 30px;
+    width:75%;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

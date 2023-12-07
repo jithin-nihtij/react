@@ -1,0 +1,23 @@
+.rewardStyle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row1{
+    width: 80%;
+    margin: auto;
+}
+
+.footer{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+}
+
+.footerpara{
+    color: white;
+    font-size: small;
+}
+
+.footerlist p{
+    font-size: small;
+}

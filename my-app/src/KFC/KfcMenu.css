@@ -1,0 +1,164 @@
+.wrapper{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 600px;
+}
+
+.wrapper div img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper div p:nth-child(1){
+    border-bottom: solid red 2px;
+  
+
+}
+
+.wrapper div{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.KfcCard{
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px rgba(190, 190, 190, 0.568);
+}
+
+.kfcGrid{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   justify-content: space-around;
+    grid-gap: 10px;
+    width: 98%;
+    margin: auto;
+}
+
+
+@media screen and (max-width:780px){
+    .wrapper{
+        width: 98%;
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 500px;
+    }
+    .wrapper div img{
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
+}
+
+@media screen and (max-width:1000px){
+    .kfcGrid{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .kfcGrid{
+       
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5px;
+    }
+   
+}
+
+
+.footer{
+    background-color: rgb(34, 34, 34);
+}
+
+.footerpara{
+    color: white;
+    font-size: small;
+}
+
+.footerlist p{
+    font-size: small;
+}
+
+.animation{
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    gap: 10px;
+    animation: moveup forwards;
+    animation-duration: 2s;
+    animation-delay: 2.3s;
+    overflow-y: hidden;
+}
+
+.animation div:nth-child(1){
+
+    width:20px;
+    height: 800px;
+    background-color: brown;
+    animation: drop1 forwards;
+    animation-duration: 1.5s;
+    
+}
+
+.animation div:nth-child(2){
+
+    width:20px;
+    height: 800px;
+    background-color: brown;
+    animation: drop2 forwards linear;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+
+.animation div:nth-child(3){
+
+    width:20px;
+    height: 800px;
+    background-color: brown;
+    animation: drop3 forwards;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+}
+
+@keyframes drop1 {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(800px);}
+    100%{transform: translate(0);}
+}
+
+@keyframes drop2 {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(800px);}
+    100%{transform: translate(0);}
+}
+
+@keyframes drop3 {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(800px);}
+    100%{transform: translate(0);}
+}
+
+@keyframes moveup {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-800px);}
+}
+
+
+
+

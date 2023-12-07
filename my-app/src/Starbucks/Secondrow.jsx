@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom'
 function Secondrow() {
   
 
-  let after = useNavigate()
+  // let after = useNavigate()
 
-  let goback=()=>{
-    after('/Albums')
-  }
+  // let goback=()=>{
+  //   after('/Albums')
+  // }
 
   return (
     <div>
@@ -19,7 +19,7 @@ function Secondrow() {
             <Container className='secondrowcontent'>
               <h2> Let’s celebrate </h2>
               <p >Your holi-yay favorites are here. Pick up a Peppermint Mocha, Iced Sugar Cookie Almondmilk Latte or Caramel Brulée Latte.</p>
-              <Button onClick={goback} style={{backgroundColor:"#006241",border:"1px white solid",borderRadius:"20px"}}>Find your favorite</Button>
+              <Button  style={{backgroundColor:"#006241",border:"1px white solid",borderRadius:"20px"}}>Find your favorite</Button>
             </Container>
           
           </div>

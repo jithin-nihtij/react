@@ -1,0 +1,24 @@
+*{
+    margin:0;
+}
+.welcome{ 
+    font-weight: 300;
+    font-size: 42px;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    color: rgba(211,204,187,.7);
+}
+
+.home{
+    background-color:"#270c13";
+    padding-top:"100px";
+}
+
+.HomeBanner{
+    width: 100%;
+    object-fit: cover;
+}
+
+.HomeFooter{
+    background-color:"#270c13";
+}
