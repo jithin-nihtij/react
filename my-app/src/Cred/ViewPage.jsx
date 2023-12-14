@@ -1,32 +1,32 @@
-import React, { useContext } from 'react'
-import { crudContext } from '../App'
-import { useParams } from 'react-router-dom'
+// import React, { useContext } from 'react'
+// import { crudContext } from '../App'
+// import { useParams } from 'react-router-dom'
 
-function ViewPage() {
+// function ViewPage() {
 
-    const [data,setData] = useContext(crudContext)
+//     const [data,setData] = useContext(crudContext)
     
-    const {user} = useParams()
+//     const {user} = useParams()
 
-    console.log(user)
+//     console.log(user)
 
-    const viewData = data[user]
+//     const viewData = data[user]
 
-
-    
-
-  return (
 
     
 
-    <div>
-        <h2>{viewData.Name}</h2>
-        <h3>{viewData.Age}</h3>
-        <p>{viewData.username}</p>
+//   return (
+
+    
+
+//     <div>
+//         <h2>{viewData.Name}</h2>
+//         <h3>{viewData.Age}</h3>
+//         <p>{viewData.username}</p>
         
         
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default ViewPage
+// export default ViewPage

@@ -1,52 +1,52 @@
-import React, { useContext, useState } from 'react'
-import { Button, Form } from 'react-bootstrap'
-import { crudContext } from '../App'
-import { useNavigate, useParams } from 'react-router-dom'
+// import React, { useContext, useState } from 'react'
+// import { Button, Form } from 'react-bootstrap'
+// import { crudContext } from '../App'
+// import { useNavigate, useParams } from 'react-router-dom'
 
-function EditUser() {
+// function EditUser() {
 
-  const navigate = useNavigate()
-  const[data,setData]=useContext(crudContext)
-  const {user} = useParams()
+//   const navigate = useNavigate()
+//   const[data,setData]=useContext(crudContext)
+//   const {user} = useParams()
 
-  const editData = data[user]
+//   const editData = data[user]
 
-  const [input, setInput] = useState({
-    Name:editData.Name,
-    Age:editData.Age,
-    username:editData.username
-  })
+//   const [input, setInput] = useState({
+//     Name:editData.Name,
+//     Age:editData.Age,
+//     username:editData.username
+//   })
 
-  const handleChange=(event)=>{
-    setInput({...input,[event.target.name]:event.target.value})
-  }
+//   const handleChange=(event)=>{
+//     setInput({...input,[event.target.name]:event.target.value})
+//   }
 
- const submit=(event)=>{
-    event.preventDefault();
-    setInput(data[user]=input);
-    navigate('/')
- }
+//  const submit=(event)=>{
+//     event.preventDefault();
+//     setInput(data[user]=input);
+//     navigate('/')
+//  }
 
-  return (
-    <div>
-       <Form onSubmit={submit} style={{width:"50%",margin:"auto",height:"500px",display:"flex",justifyContent:"center",flexDirection:"column"}}>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+//   return (
+//     <div>
+//        <Form onSubmit={submit} style={{width:"50%",margin:"auto",height:"500px",display:"flex",justifyContent:"center",flexDirection:"column"}}>
+//       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
 
-        <Form.Label>Name</Form.Label>
-        <Form.Control type="text" placeholder={editData.Name} onChange={handleChange} name="Name"/>
+//         <Form.Label>Name</Form.Label>
+//         <Form.Control type="text" placeholder={editData.Name} onChange={handleChange} name="Name"/>
 
-        <Form.Label>Age</Form.Label>
-        <Form.Control type="text" placeholder={editData.Age} onChange={handleChange} name="Age"/>
+//         <Form.Label>Age</Form.Label>
+//         <Form.Control type="text" placeholder={editData.Age} onChange={handleChange} name="Age"/>
 
-        <Form.Label>User</Form.Label>
-        <Form.Control type="text" placeholder={editData.username} onChange={handleChange} name="username"/>
-      </Form.Group>
+//         <Form.Label>User</Form.Label>
+//         <Form.Control type="text" placeholder={editData.username} onChange={handleChange} name="username"/>
+//       </Form.Group>
       
-      <Button type='submit'>Submit</Button>
+//       <Button type='submit'>Submit</Button>
       
-    </Form>
-    </div>
-  )
-}
+//     </Form>
+//     </div>
+//   )
+// }
 
-export default EditUser
+// export default EditUser

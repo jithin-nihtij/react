@@ -43,6 +43,12 @@ import Data from './Cred/Data';
 import ViewPage from './Cred/ViewPage';
 import Create from './Cred/Create';
 import EditUser from './Cred/EditUser';
+import Deleteuser from './Cred/Deleteuser';
+import todo from './Todo/TodoData';
+import TodoTable from './Todo/TodoTable';
+import AddTodo from './Todo/AddTodo';
+import EditTodo from './Todo/EditTodo';
+import DeleteTodo from './Todo/DeleteTodo';
 
 
 
@@ -51,13 +57,17 @@ import EditUser from './Cred/EditUser';
 
   // const newContext = createContext();
 
-  const crudContext = createContext();
+  // const crudContext = createContext();
+
+  const todoContext = createContext()
 
   function App() {
 
     // const [data, setData] = useState(Data)
 
-    const [data, setData] = useState(Data)
+    // const [data, setData] = useState(Data)
+
+    const [tododata, setTodoData] = useState(todo)
 
   return (
 
@@ -70,7 +80,23 @@ import EditUser from './Cred/EditUser';
       {/* <newContext.Provider value={[data,setData]}>
         <Table/>
       </newContext.Provider> */}
-      <crudContext.Provider value={[data,setData]}>
+
+
+      <todoContext.Provider value={[tododata,setTodoData]}>
+        <BrowserRouter>
+
+          <Routes>
+            <Route path='/' element={<TodoTable/>}/>
+            <Route path='/create' element={<AddTodo/>}/>
+            <Route path='/edit/:user' element={<EditTodo/>}/>
+            {/* <Route path='/delete/:user' element={<DeleteTodo/>} /> */}
+          </Routes>
+
+        </BrowserRouter>
+      </todoContext.Provider>
+
+
+      {/* <crudContext.Provider value={[data,setData]}>
 
         <BrowserRouter>
           <Routes>
@@ -78,10 +104,11 @@ import EditUser from './Cred/EditUser';
             <Route path='/view/:user' element={<ViewPage/>}/>
             <Route path='/edit/:user' element={<EditUser/>}/>
             <Route path='/create' element={<Create/>}></Route>
+            <Route path='/delete/:user' element={<Deleteuser/>}></Route>
           </Routes>
         </BrowserRouter>
         
-      </crudContext.Provider>
+      </crudContext.Provider> */}
 
      {/* <Mappingcarousel/>
       
@@ -124,4 +151,6 @@ import EditUser from './Cred/EditUser';
 export default App;
 // export {newContext};
 
-export {crudContext};
+// export {crudContext};
+
+export {todoContext};
