@@ -44,11 +44,14 @@ import ViewPage from './Cred/ViewPage';
 import Create from './Cred/Create';
 import EditUser from './Cred/EditUser';
 import Deleteuser from './Cred/Deleteuser';
-import todo from './Todo/TodoData';
-import TodoTable from './Todo/TodoTable';
-import AddTodo from './Todo/AddTodo';
-import EditTodo from './Todo/EditTodo';
-import DeleteTodo from './Todo/DeleteTodo';
+import WeatherApp from './Weather/WeatherApp';
+
+
+// import todo from './Todo/TodoData';
+// import TodoTable from './Todo/TodoTable';
+// import AddTodo from './Todo/AddTodo';
+// import EditTodo from './Todo/EditTodo';
+// import DeleteTodo from './Todo/DeleteTodo';
 
 
 
@@ -59,7 +62,7 @@ import DeleteTodo from './Todo/DeleteTodo';
 
   // const crudContext = createContext();
 
-  const todoContext = createContext()
+  // const todoContext = createContext()
 
   function App() {
 
@@ -67,7 +70,7 @@ import DeleteTodo from './Todo/DeleteTodo';
 
     // const [data, setData] = useState(Data)
 
-    const [tododata, setTodoData] = useState(todo)
+    // const [tododata, setTodoData] = useState(todo)
 
   return (
 
@@ -81,7 +84,7 @@ import DeleteTodo from './Todo/DeleteTodo';
         <Table/>
       </newContext.Provider> */}
 
-
+{/* 
       <todoContext.Provider value={[tododata,setTodoData]}>
         <BrowserRouter>
 
@@ -89,11 +92,11 @@ import DeleteTodo from './Todo/DeleteTodo';
             <Route path='/' element={<TodoTable/>}/>
             <Route path='/create' element={<AddTodo/>}/>
             <Route path='/edit/:user' element={<EditTodo/>}/>
-            {/* <Route path='/delete/:user' element={<DeleteTodo/>} /> */}
+           
           </Routes>
 
         </BrowserRouter>
-      </todoContext.Provider>
+      </todoContext.Provider> */}
 
 
       {/* <crudContext.Provider value={[data,setData]}>
@@ -143,6 +146,8 @@ import DeleteTodo from './Todo/DeleteTodo';
       {/* <WizRoute/> */}
       {/* <KfcRoute/> */}
       {/* <LoginForm/> */}
+     <WeatherApp/>
+      
    
     </div>
   );
@@ -153,4 +158,4 @@ export default App;
 
 // export {crudContext};
 
-export {todoContext};
+// export {todoContext};
