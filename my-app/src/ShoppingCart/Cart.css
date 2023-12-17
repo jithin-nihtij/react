@@ -1,0 +1,21 @@
+.cartGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:90%;
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+.cartGrid .card{
+   
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .cartGrid{
+    grid-template-columns: 1fr ;
+    margin: auto;
+    }
+}

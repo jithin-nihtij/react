@@ -45,6 +45,11 @@ import Create from './Cred/Create';
 import EditUser from './Cred/EditUser';
 import Deleteuser from './Cred/Deleteuser';
 import WeatherApp from './Weather/WeatherApp';
+import Home from './ShoppingCart/Home';
+import ShopNav from './ShoppingCart/ShopNav';
+import Cart from './ShoppingCart/Cart';
+import ParentRouter from './ShoppingCart/ParentRouter';
+
 
 
 // import todo from './Todo/TodoData';
@@ -71,6 +76,8 @@ import WeatherApp from './Weather/WeatherApp';
     // const [data, setData] = useState(Data)
 
     // const [tododata, setTodoData] = useState(todo)
+
+   
 
   return (
 
@@ -146,9 +153,11 @@ import WeatherApp from './Weather/WeatherApp';
       {/* <WizRoute/> */}
       {/* <KfcRoute/> */}
       {/* <LoginForm/> */}
-     <WeatherApp/>
-      
-   
+     {/* <WeatherApp/> */}
+     <ParentRouter/>
+    
+
+        
     </div>
   );
 }

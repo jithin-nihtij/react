@@ -89,27 +89,8 @@ function WeatherApp() {
         ))}
       
       </div>
-{/* 
-         {data.map((disp) => (
-        <div >
-          <h1>{disp.main && disp.main.temp} F</h1>
-          <h1>Humdity:{disp.main.humidity}%</h1>
-          <h1>{disp.name}</h1>
-          <h1>Wind Speed:{disp.wind.speed}m/s</h1>
-          {disp.weather.map((disp) => (
-            <div >
-              <h1></h1>
-              <h1>{disp.description}</h1>
-              <img
-                src={getWeatherIconUrl(disp.icon)}
-                alt={disp.description}
-              />
-            </div>
-          ))}
-        
-        </div>
-      ))}
-      */}
+
+      
     </div>
   )
 }
