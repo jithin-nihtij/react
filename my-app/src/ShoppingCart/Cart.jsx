@@ -5,7 +5,7 @@ import './Cart.css';
 import { MdDelete } from "react-icons/md";
 
 function Cart() {
-  const { cart,setCart } = useContext(shopContext);
+  const { cart,setCart,bg,changeMode } = useContext(shopContext);
 
   const [quantities, setQuantities] = useState(cart.map(() => 1));
 
@@ -43,7 +43,7 @@ function Cart() {
 
   if(cart.length == 0){
     return(
-      <div style={{display:"flex",height:"694px",alignItems:"center",justifyContent:"center",backgroundColor:"rgb(18, 17, 49)",color:"white"}}>
+      <div style={{display:"flex",height:"694px",alignItems:"center",justifyContent:"center",backgroundColor:bg?"white":"rgb(18, 17, 49)",color:bg?"black":"white"}}>
         <h2><MdDelete /></h2>
         <h2>Cart is empty </h2>
       </div>
@@ -51,12 +51,12 @@ function Cart() {
   }
 
   return (
-    <div style={{backgroundColor:"rgb(18, 17, 49)"}}>
+    <div>
       <h2 style={{ textAlign: "center" }}>Shopping Cart</h2>
 
-      <div className="cartGrid">
+      <div className="cartGrid"  style={{backgroundColor:bg?"white":"rgb(18, 17, 49)"}}>
         {cart.map((item, index) => (
-          <Card key={item.id} style={{ width: "18rem" }}>
+          <Card key={item.id} style={{ width: "18rem" ,backgroundColor:bg?'#bac6cf' :'rgb(12, 11, 31)',color:bg?'black':'white'}}>
             <Carousel>
               {item.images.map((img, imgIndex) => (
                 <Carousel.Item key={imgIndex}>
@@ -92,8 +92,8 @@ function Cart() {
         ))}
       </div>
 
-      <div style={{ textAlign: "center", margin: "20px" }}>
-        <h3 style={{color:"white"}}>Total: ${calculateTotalPrice()}</h3>
+      <div style={{ textAlign: "center", margin: "20px",backgroundColor:bg?"white":"rgb(18, 17, 49)",color:bg?"black":"white" }}>
+        <h3 >Total: ${calculateTotalPrice()}</h3>
       </div>
     </div>
   );

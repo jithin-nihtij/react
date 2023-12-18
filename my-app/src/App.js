@@ -49,6 +49,7 @@ import Home from './ShoppingCart/Home';
 import ShopNav from './ShoppingCart/ShopNav';
 import Cart from './ShoppingCart/Cart';
 import ParentRouter from './ShoppingCart/ParentRouter';
+import Practice from './Practice';
 
 
 
@@ -155,7 +156,7 @@ import ParentRouter from './ShoppingCart/ParentRouter';
       {/* <LoginForm/> */}
      {/* <WeatherApp/> */}
      <ParentRouter/>
-    
+     {/* <Practice/> */}
 
         
     </div>

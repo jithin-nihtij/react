@@ -1,8 +1,7 @@
 .cartGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width:90%;
-    margin: auto;
+    
     grid-gap: 20px;
     padding: 20px 0;
     
@@ -13,7 +12,7 @@
     text-align: center;
     margin: auto;
     text-align: center;
-    background-color: rgb(12, 11, 31);
+    
     color: white;
     box-shadow: 0px 0px 1px 1px rgb(82, 82, 82);
     border-radius: 20px;

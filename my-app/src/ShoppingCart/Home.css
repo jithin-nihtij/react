@@ -5,14 +5,14 @@
    
     grid-gap: 20px;
     padding: 100px 0;
-    background-color: rgb(18, 17, 49);
+   
 }
 
 .shoppingGrid .card{
   
     margin: auto;
     text-align: center;
-    background-color: rgb(12, 11, 31);
+    
     color: white;
     box-shadow: 0px 0px 1px 1px rgb(82, 82, 82);
     border-radius: 20px;
