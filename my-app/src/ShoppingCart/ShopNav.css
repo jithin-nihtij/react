@@ -1,0 +1,33 @@
+.nav{
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.home{
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.home:hover{
+    color: rgb(137, 137, 137);
+}
+
+.home:active{
+    color: rgb(137, 137, 137);
+}
+
+.cart-animation {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  
+  
+  
+

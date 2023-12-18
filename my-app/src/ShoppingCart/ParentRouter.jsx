@@ -10,14 +10,16 @@ const shopContext = createContext();
 function ParentRouter() {
   const [data, setdata] = useState(ProductData);
   const [cart, setCart] = useState([]);
+ 
 
   const addToCart = (item) => {
     setCart((prevCart) => [...prevCart, item]);
+   
   };
 
   return (
     <div>
-      <shopContext.Provider value={{ data, setdata, cart, addToCart }}>
+      <shopContext.Provider value={{ data, setdata, cart, addToCart,setCart }}>
         <BrowserRouter>
           <ShopNav size={cart.length} />
           <Routes>

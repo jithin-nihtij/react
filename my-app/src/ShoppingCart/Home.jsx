@@ -2,21 +2,21 @@ import React, { useContext } from 'react';
 import { Button, Card, Carousel } from 'react-bootstrap';
 import './Home.css';
 import { shopContext } from './ParentRouter';
-// import { toast } from 'react-toastify'
+
 
 function Home() {
  
     const { data, cart, addToCart } = useContext(shopContext);
 
     const handleAddToCart = (item) => {
-        // Check if the item is already in the cart
+    
         const isItemInCart = cart.some((cartItem) => cartItem.id === item.id);
     
         if (isItemInCart) {
-          // Show an alert if the item is already in the cart
+  
           alert('Item already added to the cart');
         } else {
-          // Add the item to the cart if it's not already there
+        
           addToCart(item);
         }
       };
