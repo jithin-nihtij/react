@@ -8,7 +8,7 @@
 //   const navigate = useNavigate()
 //   const[data,setData]=useContext(crudContext)
 //   const {user} = useParams()
-
+    
 //   const editData = data[user]
 
 //   const [input, setInput] = useState({

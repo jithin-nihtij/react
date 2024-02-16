@@ -50,6 +50,13 @@ import ShopNav from './ShoppingCart/ShopNav';
 import Cart from './ShoppingCart/Cart';
 import ParentRouter from './ShoppingCart/ParentRouter';
 import Practice from './Practice';
+import ParallaxScrolling from './ParallaxScrolling/ParallaxScrolling';
+import Cred2Parent from './Cred2/Cred2Parent';
+import RouterRegister from './SignUpAndLogin/RouterRegister';
+import UseEffect2 from './UseEffect2';
+import UseRef from './UseRef';
+import PieChart from './PieChart';
+
 
 
 
@@ -99,8 +106,7 @@ import Practice from './Practice';
           <Routes>
             <Route path='/' element={<TodoTable/>}/>
             <Route path='/create' element={<AddTodo/>}/>
-            <Route path='/edit/:user' element={<EditTodo/>}/>
-           
+            <Route path='/edit/:user' element={<EditTodo/>}/>  
           </Routes>
 
         </BrowserRouter>
@@ -155,10 +161,15 @@ import Practice from './Practice';
       {/* <KfcRoute/> */}
       {/* <LoginForm/> */}
      {/* <WeatherApp/> */}
-     <ParentRouter/>
+     {/* <ParentRouter/> */}
      {/* <Practice/> */}
+    {/* <ParallaxScrolling/> */}
+    {/* <Cred2Parent/> */}
+    {/* <RouterRegister/> */}
 
-        
+     {/* <UseEffect2/> */}
+       {/* <UseRef/>  */}
+       <PieChart/>
     </div>
   );
 }
